@@ -1,5 +1,6 @@
-FROM --platform=${TARGETPLATFORM} jc21/alpine-nginx-full:BASE_TAG
-LABEL maintainer="Jamie Curnow <jc@jc21.com>"
+# FROM --platform=${TARGETPLATFORM} xkas/alpine-nginx-full:latest
+FROM xkas/alpine-nginx-full:1.0.0
+LABEL maintainer="xkas"
 
 RUN apk update \
 	&& apk add --update python2 gcc g++ musl-dev make build-base git npm nodejs-current yarn \

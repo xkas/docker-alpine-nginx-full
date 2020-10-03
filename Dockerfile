@@ -22,7 +22,7 @@ RUN /tmp/build-openresty
 #############
 
 FROM alpine:latest
-LABEL maintainer="Jamie Curnow <jc@jc21.com>"
+LABEL maintainer="xkas"
 
 # Env var for bashrc
 ARG OPENRESTY_VERSION
